@@ -14,6 +14,7 @@
 		F6E4030520CAD094001FDEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E4030320CAD094001FDEBB /* LaunchScreen.storyboard */; };
 		F6E4031220CAD1BA001FDEBB /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6E4031020CAD1BA001FDEBB /* Delm-Medium.otf */; };
 		F6E4031320CAD1BA001FDEBB /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6E4031120CAD1BA001FDEBB /* ThirstySoftRegular.otf */; };
+		F6E4031520CB032A001FDEBB /* PictureCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4031420CB032A001FDEBB /* PictureCanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F6E4030620CAD094001FDEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E4031020CAD1BA001FDEBB /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		F6E4031120CAD1BA001FDEBB /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		F6E4031420CB032A001FDEBB /* PictureCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F6E402FE20CAD094001FDEBB /* Main.storyboard */,
+				F6E4031420CB032A001FDEBB /* PictureCanvasView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E402FD20CAD094001FDEBB /* ViewController.swift in Sources */,
+				F6E4031520CB032A001FDEBB /* PictureCanvasView.swift in Sources */,
 				F6E402FB20CAD094001FDEBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
