@@ -12,6 +12,8 @@
 		F6E4030020CAD094001FDEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E402FE20CAD094001FDEBB /* Main.storyboard */; };
 		F6E4030220CAD094001FDEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E4030120CAD094001FDEBB /* Assets.xcassets */; };
 		F6E4030520CAD094001FDEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E4030320CAD094001FDEBB /* LaunchScreen.storyboard */; };
+		F6E4031220CAD1BA001FDEBB /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6E4031020CAD1BA001FDEBB /* Delm-Medium.otf */; };
+		F6E4031320CAD1BA001FDEBB /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6E4031120CAD1BA001FDEBB /* ThirstySoftRegular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F6E4030120CAD094001FDEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6E4030420CAD094001FDEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6E4030620CAD094001FDEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6E4031020CAD1BA001FDEBB /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
+		F6E4031120CAD1BA001FDEBB /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		F6E402F920CAD094001FDEBB /* Instagrid_Project5 */ = {
 			isa = PBXGroup;
 			children = (
-				F6E402FA20CAD094001FDEBB /* AppDelegate.swift */,
-				F6E402FC20CAD094001FDEBB /* ViewController.swift */,
-				F6E402FE20CAD094001FDEBB /* Main.storyboard */,
-				F6E4030120CAD094001FDEBB /* Assets.xcassets */,
-				F6E4030320CAD094001FDEBB /* LaunchScreen.storyboard */,
+				F6E4030E20CAD0B4001FDEBB /* Model */,
+				F6E4030D20CAD0AE001FDEBB /* Controler */,
+				F6E4030C20CAD0A4001FDEBB /* View */,
+				F6E4030F20CAD0EA001FDEBB /* Supporting Files */,
 				F6E4030620CAD094001FDEBB /* Info.plist */,
 			);
 			path = Instagrid_Project5;
+			sourceTree = "<group>";
+		};
+		F6E4030C20CAD0A4001FDEBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6E402FE20CAD094001FDEBB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6E4030D20CAD0AE001FDEBB /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				F6E402FC20CAD094001FDEBB /* ViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		F6E4030E20CAD0B4001FDEBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6E4030F20CAD0EA001FDEBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4030120CAD094001FDEBB /* Assets.xcassets */,
+				F6E4031020CAD1BA001FDEBB /* Delm-Medium.otf */,
+				F6E4031120CAD1BA001FDEBB /* ThirstySoftRegular.otf */,
+				F6E402FA20CAD094001FDEBB /* AppDelegate.swift */,
+				F6E4030320CAD094001FDEBB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +163,8 @@
 			files = (
 				F6E4030520CAD094001FDEBB /* LaunchScreen.storyboard in Resources */,
 				F6E4030220CAD094001FDEBB /* Assets.xcassets in Resources */,
+				F6E4031320CAD1BA001FDEBB /* ThirstySoftRegular.otf in Resources */,
+				F6E4031220CAD1BA001FDEBB /* Delm-Medium.otf in Resources */,
 				F6E4030020CAD094001FDEBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
