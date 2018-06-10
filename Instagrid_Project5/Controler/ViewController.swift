@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var layoutOneButton: UIButton!
     @IBOutlet weak var layoutTwoButton: UIButton!
     @IBOutlet weak var layoutThreeButton: UIButton!
+    @IBOutlet weak var canvasFrame: UIView! {
+        didSet{
+            canvasFrame.layer.applySketchShadow(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5), alpha: 0.5, x: 0, y: 2, blur: 4, spread: 0)
+        }
+    }
+    @IBOutlet weak var pictureCanvasOne: PictureCanvasOne!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +34,7 @@ class ViewController: UIViewController {
     @IBAction func didTapLayoutOneButton() {
         showCheckMark(layoutOneButton)
         hideOtherCheckMarks(layoutTwoButton, layoutThreeButton)
+        pictureCanvasOne.pictureOne = #imageLiteral(resourceName: "jim")
     }
     
     @IBAction func didTapLayoutTwoButton() {
@@ -48,5 +56,28 @@ class ViewController: UIViewController {
         button.imageView?.isHidden = false
     }
     
+}
+
+extension CALayer {
+    func applySketchShadow(
+        color: UIColor = .black,
+        alpha: Float = 0.5,
+        x: CGFloat = 0,
+        y: CGFloat = 2,
+        blur: CGFloat = 4,
+        spread: CGFloat = 0)
+    {
+        shadowColor = color.cgColor
+        shadowOpacity = alpha
+        shadowOffset = CGSize(width: x, height: y)
+        shadowRadius = blur / 2.0
+        if spread == 0 {
+            shadowPath = nil
+        } else {
+            let dx = -spread
+            let rect = bounds.insetBy(dx: dx, dy: dx)
+            shadowPath = UIBezierPath(rect: rect).cgPath
+        }
+    }
 }
 
