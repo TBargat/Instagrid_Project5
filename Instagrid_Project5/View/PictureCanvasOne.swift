@@ -37,19 +37,19 @@ class PictureCanvasOne: UIView {
     @IBOutlet private var buttonThree: UIButton!
     @IBOutlet private var imageThree: UIImageView!
     
-    var pictureOne = #imageLiteral(resourceName: "jim") {
+    var pictureOne: UIImage? {
         didSet {
             imageOne.image = pictureOne
         }
     }
     
-    var pictureTwo = #imageLiteral(resourceName: "jim") {
+    var pictureTwo: UIImage? {
         didSet{
             imageTwo.image = pictureTwo
         }
     }
     
-    var pictureThree = #imageLiteral(resourceName: "jim") {
+    var pictureThree: UIImage? {
         didSet{
             imageThree.image = pictureThree
         }
@@ -57,14 +57,15 @@ class PictureCanvasOne: UIView {
     
     @IBAction func didTapButtonOne() {
         pictureOne = #imageLiteral(resourceName: "jim")
+        
     }
     
     @IBAction func didTapButtonTwo() {
-        pictureTwo = #imageLiteral(resourceName: "jim")
+        pictureTwo = #imageLiteral(resourceName: "jim2")
     }
     
     @IBAction func didTapButtonThree() {
-        pictureThree = #imageLiteral(resourceName: "jim")
+        pictureThree = #imageLiteral(resourceName: "JimCarreyCableGuy-640x480")
     }
 }
 

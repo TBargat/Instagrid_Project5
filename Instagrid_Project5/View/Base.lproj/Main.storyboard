@@ -54,8 +54,8 @@
                                                             <action selector="didTapButtonOne" destination="G3S-en-ea0" eventType="touchUpInside" id="VJV-SO-hDT"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajT-Lf-tL0">
-                                                        <rect key="frame" x="-57" y="-1" width="240" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajT-Lf-tL0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
@@ -78,8 +78,8 @@
                                                             <action selector="didTapButtonTwo" destination="G3S-en-ea0" eventType="touchUpInside" id="Aqy-ef-p66"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-na-Ocb">
-                                                        <rect key="frame" x="-56.5" y="-0.5" width="240" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-na-Ocb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
@@ -102,8 +102,8 @@
                                                             <action selector="didTapButtonThree" destination="G3S-en-ea0" eventType="touchUpInside" id="1yW-he-CFO"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M38-fw-LXT">
-                                                        <rect key="frame" x="15" y="-1" width="240" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M38-fw-LXT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="127"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
