@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     @IBAction func didTapLayoutOneButton() {
         showCheckMark(layoutOneButton)
         hideOtherCheckMarks(layoutTwoButton, layoutThreeButton)
-        pictureCanvasOne.pictureOne = #imageLiteral(resourceName: "jim")
     }
     
     @IBAction func didTapLayoutTwoButton() {

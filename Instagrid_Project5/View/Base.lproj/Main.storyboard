@@ -50,10 +50,13 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz1-1b-mCw">
                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
                                                         <state key="normal" image="CrossShape"/>
+                                                        <connections>
+                                                            <action selector="didTapButtonOne" destination="G3S-en-ea0" eventType="touchUpInside" id="VJV-SO-hDT"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajT-Lf-tL0">
-                                                        <rect key="frame" x="-56.5" y="-0.5" width="240" height="128"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="-57" y="-1" width="240" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,7 +74,14 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-vf-XVg">
                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
                                                         <state key="normal" image="CrossShape"/>
+                                                        <connections>
+                                                            <action selector="didTapButtonTwo" destination="G3S-en-ea0" eventType="touchUpInside" id="Aqy-ef-p66"/>
+                                                        </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-na-Ocb">
+                                                        <rect key="frame" x="-56.5" y="-0.5" width="240" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -88,7 +98,14 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRg-GI-htP">
                                                         <rect key="frame" x="0.0" y="0.0" width="270" height="127"/>
                                                         <state key="normal" image="CrossShape"/>
+                                                        <connections>
+                                                            <action selector="didTapButtonThree" destination="G3S-en-ea0" eventType="touchUpInside" id="1yW-he-CFO"/>
+                                                        </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M38-fw-LXT">
+                                                        <rect key="frame" x="15" y="-1" width="240" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -123,7 +140,9 @@
                                             <outlet property="frameButtonOne" destination="fDH-z8-A7P" id="rG8-he-b3T"/>
                                             <outlet property="frameButtonThree" destination="47v-F3-dAu" id="GJT-yV-I4e"/>
                                             <outlet property="frameButtonTwo" destination="Zq1-z9-3QP" id="KwY-kj-eBV"/>
-                                            <outlet property="imageOne" destination="ajT-Lf-tL0" id="0k1-ps-LAO"/>
+                                            <outlet property="imageOne" destination="ajT-Lf-tL0" id="WpI-SW-Wp4"/>
+                                            <outlet property="imageThree" destination="M38-fw-LXT" id="CIS-ps-aCh"/>
+                                            <outlet property="imageTwo" destination="aVe-na-Ocb" id="T1i-nD-78I"/>
                                         </connections>
                                     </view>
                                 </subviews>
@@ -226,7 +245,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4E-68-W6Y">
                                         <rect key="frame" x="0.0" y="17" width="161" height="29"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="161" id="3RT-lQ-zqX"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="161" id="3RT-lQ-zqX"/>
                                             <constraint firstAttribute="width" secondItem="u4E-68-W6Y" secondAttribute="height" multiplier="161:29" id="54q-xB-hGa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="26"/>
@@ -296,13 +315,13 @@
                             <mask key="constraints">
                                 <exclude reference="BpY-ZV-sEd"/>
                                 <exclude reference="Iwk-l6-DZS"/>
+                                <exclude reference="gYd-Ir-ZRc"/>
+                                <exclude reference="rM2-bD-ftf"/>
                                 <exclude reference="dJO-pv-iO3"/>
                                 <exclude reference="1fe-ff-qBH"/>
                                 <exclude reference="J01-EH-Xcv"/>
                                 <exclude reference="okt-eN-BWp"/>
                                 <exclude reference="qNS-Eb-VY1"/>
-                                <exclude reference="gYd-Ir-ZRc"/>
-                                <exclude reference="rM2-bD-ftf"/>
                                 <exclude reference="Pvq-19-u42"/>
                                 <exclude reference="frz-ih-neg"/>
                             </mask>
@@ -313,6 +332,10 @@
                                 <include reference="BpY-ZV-sEd"/>
                                 <include reference="Iwk-l6-DZS"/>
                                 <exclude reference="h5X-su-CbK"/>
+                                <exclude reference="H9U-qa-kcZ"/>
+                                <include reference="gYd-Ir-ZRc"/>
+                                <include reference="rM2-bD-ftf"/>
+                                <exclude reference="rY8-bV-HQI"/>
                                 <exclude reference="R2z-SE-lJH"/>
                                 <include reference="dJO-pv-iO3"/>
                                 <exclude reference="1fe-ff-qBH"/>
@@ -323,10 +346,6 @@
                                 <include reference="okt-eN-BWp"/>
                                 <include reference="qNS-Eb-VY1"/>
                                 <exclude reference="vPW-NG-7Ba"/>
-                                <exclude reference="H9U-qa-kcZ"/>
-                                <include reference="gYd-Ir-ZRc"/>
-                                <include reference="rM2-bD-ftf"/>
-                                <exclude reference="rY8-bV-HQI"/>
                                 <exclude reference="3lZ-Jt-jw6"/>
                                 <include reference="Pvq-19-u42"/>
                                 <include reference="frz-ih-neg"/>

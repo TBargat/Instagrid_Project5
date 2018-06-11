@@ -26,6 +26,7 @@ class PictureCanvasOne: UIView {
         }
     }
     @IBOutlet private var buttonTwo: UIButton!
+    @IBOutlet private var imageTwo: UIImageView!
     
     @IBOutlet private var frameButtonThree: UIView! {
         didSet{
@@ -34,11 +35,36 @@ class PictureCanvasOne: UIView {
         }
     }
     @IBOutlet private var buttonThree: UIButton!
+    @IBOutlet private var imageThree: UIImageView!
     
     var pictureOne = #imageLiteral(resourceName: "jim") {
         didSet {
             imageOne.image = pictureOne
         }
+    }
+    
+    var pictureTwo = #imageLiteral(resourceName: "jim") {
+        didSet{
+            imageTwo.image = pictureTwo
+        }
+    }
+    
+    var pictureThree = #imageLiteral(resourceName: "jim") {
+        didSet{
+            imageThree.image = pictureThree
+        }
+    }
+    
+    @IBAction func didTapButtonOne() {
+        pictureOne = #imageLiteral(resourceName: "jim")
+    }
+    
+    @IBAction func didTapButtonTwo() {
+        pictureTwo = #imageLiteral(resourceName: "jim")
+    }
+    
+    @IBAction func didTapButtonThree() {
+        pictureThree = #imageLiteral(resourceName: "jim")
     }
 }
 
