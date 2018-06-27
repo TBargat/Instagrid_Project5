@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     @IBAction func didTapLayoutTwoButton() {
         showCheckMark(layoutTwoButton)
         hideOtherCheckMarks(layoutOneButton, layoutThreeButton)
+        CameraHandler.shared.photoLibrary()
     }
     
     @IBAction func didTapLayoutThreeButton() {

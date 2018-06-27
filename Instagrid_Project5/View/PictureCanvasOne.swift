@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PictureCanvasOne: UIView {
+class PictureCanvasOne: UIView, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet private var frameButtonOne: UIView! {
         didSet{
@@ -17,7 +17,6 @@ class PictureCanvasOne: UIView {
         }
     }
     @IBOutlet private var buttonOne: UIButton!
-    @IBOutlet private var imageOne: UIImageView!
     
     @IBOutlet private var frameButtonTwo: UIView! {
         didSet{
@@ -26,7 +25,6 @@ class PictureCanvasOne: UIView {
         }
     }
     @IBOutlet private var buttonTwo: UIButton!
-    @IBOutlet private var imageTwo: UIImageView!
     
     @IBOutlet private var frameButtonThree: UIView! {
         didSet{
@@ -35,38 +33,25 @@ class PictureCanvasOne: UIView {
         }
     }
     @IBOutlet private var buttonThree: UIButton!
-    @IBOutlet private var imageThree: UIImageView!
     
-    var pictureOne: UIImage? {
-        didSet {
-            imageOne.image = pictureOne
-        }
-    }
     
-    var pictureTwo: UIImage? {
-        didSet{
-            imageTwo.image = pictureTwo
-        }
-    }
-    
-    var pictureThree: UIImage? {
-        didSet{
-            imageThree.image = pictureThree
-        }
-    }
     
     @IBAction func didTapButtonOne() {
-        pictureOne = #imageLiteral(resourceName: "jim")
-        
+        buttonOne.setImage(#imageLiteral(resourceName: "jim"), for: .normal)
+        //buttonOne.imageView?.contentMode = .scaleAspectFill
     }
     
     @IBAction func didTapButtonTwo() {
-        pictureTwo = #imageLiteral(resourceName: "jim2")
+        CameraHandler.shared.photoLibrary()
+        
+        
     }
     
     @IBAction func didTapButtonThree() {
-        pictureThree = #imageLiteral(resourceName: "JimCarreyCableGuy-640x480")
+        buttonThree.setImage(#imageLiteral(resourceName: "JimCarreyCableGuy-640x480"), for: .normal)
+        buttonThree.imageView?.contentMode = .scaleAspectFill
     }
+    
 }
 
 

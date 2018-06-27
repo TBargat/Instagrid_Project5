@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F615172820D959FA0086A399 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615172720D959FA0086A399 /* CameraHandler.swift */; };
 		F6E402FB20CAD094001FDEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E402FA20CAD094001FDEBB /* AppDelegate.swift */; };
 		F6E402FD20CAD094001FDEBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E402FC20CAD094001FDEBB /* ViewController.swift */; };
 		F6E4030020CAD094001FDEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E402FE20CAD094001FDEBB /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F615172720D959FA0086A399 /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		F6E402F720CAD094001FDEBB /* Instagrid_Project5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid_Project5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E402FA20CAD094001FDEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E402FC20CAD094001FDEBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				F6E402FE20CAD094001FDEBB /* Main.storyboard */,
 				F6FA1DF720CD6D7700FBC2E6 /* PictureCanvasOne.swift */,
+				F615172720D959FA0086A399 /* CameraHandler.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E402FD20CAD094001FDEBB /* ViewController.swift in Sources */,
+				F615172820D959FA0086A399 /* CameraHandler.swift in Sources */,
 				F6E402FB20CAD094001FDEBB /* AppDelegate.swift in Sources */,
 				F6FA1DF820CD6D7700FBC2E6 /* PictureCanvasOne.swift in Sources */,
 			);
