@@ -57,15 +57,18 @@ class PictureCanvasOne: UIView {
     
     @IBAction func didTapButtonOne() {
         pictureOne = #imageLiteral(resourceName: "jim")
+        buttonOne.alpha = 0
         
     }
     
     @IBAction func didTapButtonTwo() {
         pictureTwo = #imageLiteral(resourceName: "jim2")
+        buttonTwo.alpha = 0
     }
     
     @IBAction func didTapButtonThree() {
         pictureThree = #imageLiteral(resourceName: "JimCarreyCableGuy-640x480")
+        buttonThree.alpha = 0
     }
 }
 
